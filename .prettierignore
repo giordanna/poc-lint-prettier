@@ -1,0 +1,14 @@
+e2e/
+node_modules/
+coverage/
+dist/
+build/
+out/
+www/
+.next/
+docs/
+src/polyfills.ts
+src/main.ts
+src/test.ts
+package-lock.json
+karma.conf.js
