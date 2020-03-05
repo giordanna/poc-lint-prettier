@@ -1,6 +1,12 @@
 {
   "name": "poc-lint-prettier",
   "version": "0.0.0",
+  "lint-staged": {
+    "*.js": [
+      "npm run prettier",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "ng lint --fix && npm run prettier",
