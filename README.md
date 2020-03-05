@@ -63,7 +63,6 @@ npm i -D prettier tslint-config-prettier tslint-plugin-prettier husky lint-stage
   }
   ...
 }
-}
 ```
 
 `.prettierrc`:
@@ -155,6 +154,9 @@ Fixed 6 error(s) in /home/giordanna/repos/poc-lint-prettier/src/app/app.componen
 
 ERROR: /home/giordanna/repos/poc-lint-prettier/src/app/app.component.ts:12:9 - Identifier 'totalmente_errado' is never reassigned; use 'const' instead of 'let'.
 ERROR: /home/giordanna/repos/poc-lint-prettier/src/app/app.component.ts:12:9 - variable name must be in lowerCamelCase, PascalCase or UPPER_CASE
+
+Lint errors found in the listed files.
+husky > pre-commit hook failed (add --no-verify to bypass)
 ```
 
 - Ajuste para commitar:

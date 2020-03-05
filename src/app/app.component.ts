@@ -14,7 +14,7 @@ export class AppComponent {
     return totalmenteErrado;
   }
   */
- 
+
   funcaoNova(): string {
     const totalmenteErrado = 'aaaaa';
     return totalmenteErrado;
