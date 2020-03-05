@@ -15,12 +15,13 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prettier": "prettier --write '{functions,src,configuration}/**/*.{ts,js,scss,html}'"
+    "prettier": "prettier --write '{functions,src,configuration}/**/*.{ts,js,scss,html}'",
+    "lint:watch": "nodemon --exec \"ng lint || exit 1\" --ext ts",
+    "start": "concurrently --kill-others \"npm run lint:watch\" \"ng serve\""
   },
   "private": true,
   "dependencies": {
@@ -54,6 +55,7 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
+    "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",

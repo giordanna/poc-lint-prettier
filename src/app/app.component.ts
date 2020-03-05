@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'poc-lint-prettier';
+
+  funcaoNova(): string {
+    const totalmenteErrado = 'aaaaa';
+    return totalmenteErrado;
+  }
 }
